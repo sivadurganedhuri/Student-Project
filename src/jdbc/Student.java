@@ -179,8 +179,9 @@ public class Student {
 			else {
 				System.out.println("\n\n\t\tUPDATE FAILED ????????????");
 			}
-			conn.close();
 			pmst.close();
+			conn.close();
+			
 			
 		} catch (Exception e) {
 			// TODO: handle exception
@@ -257,7 +258,7 @@ public class Student {
 				System.out.println("email :"+rs.getString("email"));
 				System.out.println("password :"+rs.getString("password"));
 			}
-			con.close();
+			conn.close();
 			pmst.close();
 		} catch (Exception e) {
 			// TODO: handle exception
